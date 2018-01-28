@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podnajem - kalkulator</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__heading">
+            <span class="header__heading-main">podnajem</span>
+            <span class="header__heading-sub">kalkulator inwestycyjny</span>
+            <a href="#step1" class="btn--blue">start</a>
+        </h1>
+        <div class="scroll">
+            <div class="scroll__circle"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-step" id="step1">
+            <div class="step">
+                <div class="step__top">
+                    <div class="step__top-heading">
+                        <h2 class="secondary-heading">krok #1</h2>
+                        <h3 class="tertiary-heading">koszty początkowe</h3>
+                    </div>
+                </div>
+                <div class="step__form">
+
+                    <form action="#" class="form step-1-form">
+                        <div class="form__group">
+                            <input type="number" class="form__input" placeholder="Kaucja" id="deposit" required>
+                            <label for="deposit" class="form__label">Kaucja</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="number" class="form__input" placeholder="Pierwszy miesiąc" id="month1" required>
+                            <label for="month1" class="form__label">Pierwszy miesiąc</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="number" class="form__input" placeholder="Wyposażenie" id="equip" required>
+                            <label for="equip" class="form__label">Wyposażenie</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="number" class="form__input" placeholder="Remont" id="renovation" required>
+                            <label for="renovation" class="form__label">Remont</label>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="step__bottom">
+                    <div class="button-container">
+                        <!--                        <a href="#" class="btn--white next-step-2">dalej</a>-->
+                        <button class="btn--white next-step-2">dalej</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-step" id="step2">
+            <div class="step">
+                <div class="step__top">
+                    <div class="step__top-heading">
+                        <h2 class="secondary-heading">krok #2</h2>
+                        <h3 class="tertiary-heading">koszty stałe</h3>
+                    </div>
+                </div>
+                <div class="step__form">
+
+                    <form action="#" class="form step-2-form">
+                        <div class="col span-1-of-2">
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Czynsz spółdzielnia" id="rent1" required>
+                                <label for="rent1" class="form__label">Czynsz spółdzielnia</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Czynsz właściciel" id="rent2" required>
+                                <label for="rent2" class="form__label">Czynsz właściciel</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Internet" id="internet" required>
+                                <label for="internet" class="form__label">Internet</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Woda" id="water" required>
+                                <label for="water" class="form__label">Woda</label>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Prąd" id="electricity" required>
+                                <label for="electricity" class="form__label">Prąd</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Gaz" id="gas" required>
+                                <label for="gas" class="form__label">Gaz</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Inne" id="other" required>
+                                <label for="other" class="form__label">Inne</label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="step__bottom">
+                    <div class="button-container">
+                        <button class="btn--white prev-step-1">cofnij</button>
+                        <button class="btn--white next-step-3">dalej</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-step" id="step3">
+            <div class="step">
+                <div class="step__top">
+                    <div class="step__top-heading">
+                        <h2 class="secondary-heading">krok #3</h2>
+                        <h3 class="tertiary-heading">szacowany przychód</h3>
+                    </div>
+                </div>
+                <div class="step__form">
+
+                    <form action="#" class="form step-3-form">
+                        <div class="col span-1-of-2">
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 1" id="room-1" required>
+                                <label for="room-1" class="form__label">Pokój 1</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 2" id="room-2" required>
+                                <label for="room-2" class="form__label">Pokój 2</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 3" id="room-3" required>
+                                <label for="room-3" class="form__label">Pokój 3</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 4" id="room-4" required>
+                                <label for="room-4" class="form__label">Pokój 4</label>
+                            </div>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 5" id="room-5" required>
+                                <label for="room-5" class="form__label">Pokój 5</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 6" id="room-6" required>
+                                <label for="room-6" class="form__label">Pokój 6</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 7" id="room-7" required>
+                                <label for="room-7" class="form__label">Pokój 7</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Pokój 8" id="room-8" required>
+                                <label for="room-8" class="form__label">Pokój 8</label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="step__bottom">
+                    <div class="button-container">
+                        <button class="btn--white prev-step-2">cofnij</button>
+                        <button class="btn--white next-step-4">dalej</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-step" id="step4">
+            <div class="step">
+                <div class="step__top">
+                    <div class="step__top-heading">
+                        <h2 class="secondary-heading">krok #4</h2>
+                        <h3 class="tertiary-heading">podsumowanie</h3>
+                    </div>
+                </div>
+                <div class="summary-container">
+                    <p class="initial-costs"></p>
+                    <p class="fixed-costs"></p>
+                    <p class="income"></p>
+                    <p class="revenue"></p>
+                    <p class="return"></p>
+                    <p class="profitability"></p>
+                </div>
+
+                <div class="step__bottom">
+                    <div class="button-container">
+                        <button class="btn--white prev-step-3">cofnij</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
